@@ -1,0 +1,22 @@
+services:
+  backend:
+    build: backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://user:pass@db:5432/pdip
+      - OPENAI_API_KEY=sk-dummy-key-for-github
+    depends_on:
+      - db
+  frontend:
+    build: frontend
+    ports:
+      - "3000:3000"
+  db:
+    image: ankane/pgvector
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=pass
+      - POSTGRES_DB=pdip
+    ports:
+      - "5432:5432"

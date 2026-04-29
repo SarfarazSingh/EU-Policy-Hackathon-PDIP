@@ -1,0 +1,9 @@
+AI_Act:
+  deepfake_threshold: 0.7
+  prohibited_patterns:
+    - "biometric inference"
+    - "social scoring"
+Political_Ads:
+  require_ad_label: true
+GDPR:
+  storage_days: 30
