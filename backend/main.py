@@ -730,6 +730,65 @@ _DEMO_SCENARIOS = [
             "Publish verified repudiation video from the targeted civil rights leader.",
         ],
     }
+    ,
+    {
+        "narrative": "False NGO press release circulates claiming a popular childhood vaccine causes infertility; the post includes fabricated endorsements from medical researchers and a doctored study PDF.",
+        "claims": [
+            "Childhood vaccine causes infertility",
+            "Top researchers endorse the study showing harm"
+        ],
+        "entities": ["NGO Name", "Research Institute", "Vaccine Program"],
+        "country": "IT", "language": "it",
+        "disinfo": 0.86, "deepfake": 0.34, "coordination": 0.79,
+        "headline": "Fabricated NGO release falsely links childhood vaccine to infertility",
+        "legal_flags": [
+            "Regulation (EU) 2024/1689 Article 50 - undisclosed synthetic or manipulated scientific material",
+            "Regulation (EU) 2022/2065 Article 34 - coordinated misinformation about public health",
+        ],
+        "actions": [
+            "Coordinate rapid correction with national health authority and publish verified scientific rebuttal.",
+            "Issue takedown requests for the doctored PDF and remove falsified endorsements.",
+            "Engage health communication teams to run targeted corrective messaging in affected regions.",
+        ],
+    },
+    {
+        "narrative": "Viral posts claim multiple large towns have unsafe tap water after a doctored lab report is shared; local community groups begin organising mass bottle-drop petitions.",
+        "claims": [
+            "Tap water in multiple towns is contaminated",
+            "Lab report proves dangerous chemical levels"
+        ],
+        "entities": ["Local Water Authority", "Community Group", "Independent Lab"],
+        "country": "PL", "language": "pl",
+        "disinfo": 0.82, "deepfake": 0.22, "coordination": 0.64,
+        "headline": "Doctored lab report sparks water safety panic and community mobilisation",
+        "legal_flags": [
+            "Regulation (EU) 2022/2065 Article 34 - misinformation causing public disorder",
+        ],
+        "actions": [
+            "Publish verified water quality data and C2PA-verified lab provenance.",
+            "Coordinate with local authorities to set up hotline and community briefings.",
+            "Request platform labels and limit further amplification of the contaminant claim.",
+        ],
+    },
+    {
+        "narrative": "A deepfake video appears to show a mayor calling for disruptive demonstrations in response to a housing policy change; the clip spreads on messaging apps with misleading subtitles.",
+        "claims": [
+            "Mayor calls for mass demonstrations over housing policy",
+        ],
+        "entities": ["Mayor", "City Council", "Housing Agency"],
+        "country": "SE", "language": "sv",
+        "disinfo": 0.90, "deepfake": 0.88, "coordination": 0.58,
+        "headline": "Deepfake of mayor urges disruptive demonstrations—proven manipulated",
+        "legal_flags": [
+            "Regulation (EU) 2024/1689 Article 50 - synthetic media used in civic context",
+            "Regulation (EU) 2022/2065 Article 35 - potential election/public order impact",
+        ],
+        "actions": [
+            "Request immediate platform action to label and limit spread; surface provenance checks.",
+            "Issue an official mayoral statement and publish original verified footage.",
+            "Alert public-order liaison teams to monitor and defuse planned gatherings.",
+        ],
+    }
 ]
 
 
